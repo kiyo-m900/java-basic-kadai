@@ -19,9 +19,7 @@ public class DictionaryExec_Chapter21 {
 	      fruitList.add("orange");
 		
 		//単語の検索
-	    for(String word : fruitList) {
-	      dic.checkFruit(word);
-	    }
+	    dic.checkFruit(fruitList);
 	}
 
 }

@@ -1,4 +1,5 @@
 package kadai_021;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Dictionary_Chapter21 {
@@ -20,14 +21,12 @@ public class Dictionary_Chapter21 {
 	}
 	
 	//繰り返し処理による単語検索
-	public void checkFruit(String word) {
+	public void checkFruit(ArrayList<String> fruitList) {
 		
-		if(!fruitMap.containsKey(word)) {
-			System.out.println(word + "は辞書に存在しません");
-		}
-		
-		for(String key : fruitMap.keySet()) {
-			if(key.equals(word)) {
+		for(String word : fruitList) {
+			if(fruitMap.get(word) == null) {
+				System.out.println(word + "は辞書に存在しません");
+			}else{
 				System.out.println(word + "の意味は" + fruitMap.get(word));
 			}
 		}
