@@ -21,13 +21,14 @@ public class Dictionary_Chapter21 {
 	
 	//繰り返し処理による単語検索
 	public void checkFruit(String word) {
-		for(int i = 0; i <= fruitMap.size(); i++) {
-			if(fruitMap.containsKey(word)) {
+		
+		if(!fruitMap.containsKey(word)) {
+			System.out.println(word + "は辞書に存在しません");
+		}
+		
+		for(String key : fruitMap.keySet()) {
+			if(key.equals(word)) {
 				System.out.println(word + "の意味は" + fruitMap.get(word));
-				break;
-			} else {
-				System.out.println(word + "は辞書に存在しません");
-				break;
 			}
 		}
 	}
