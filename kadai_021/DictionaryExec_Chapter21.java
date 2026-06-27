@@ -11,6 +11,9 @@ public class DictionaryExec_Chapter21 {
 		
 		//単語の検索
 		dic.checkFruit("apple");
+		dic.checkFruit("banana");
+		dic.checkFruit("grape");
+		dic.checkFruit("orange");
 	}
 
 }
