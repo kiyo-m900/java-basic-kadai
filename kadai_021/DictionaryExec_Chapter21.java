@@ -1,7 +1,5 @@
 package kadai_021;
 
-import java.util.ArrayList;
-
 public class DictionaryExec_Chapter21 {
 
 	public static void main(String[] args) {
@@ -12,12 +10,8 @@ public class DictionaryExec_Chapter21 {
 		dic.addFruit();
 		
 		//検索単語の配列の作成
-	      ArrayList<String> fruitList = new ArrayList<String>();
-	      fruitList.add("apple");
-	      fruitList.add("banana");
-	      fruitList.add("grape");
-	      fruitList.add("orange");
-		
+		String[] fruitList = {"apple", "banana", "grape", "orange"};
+
 		//単語の検索
 	    dic.checkFruit(fruitList);
 	}
